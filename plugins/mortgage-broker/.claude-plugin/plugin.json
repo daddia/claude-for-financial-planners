@@ -1,0 +1,10 @@
+{
+  "name": "mortgage-broker",
+  "version": "0.1.0",
+  "description": "ACL-scoped drafting support for Australian mortgage brokers — needs analysis, lender-policy research, serviceability comparison, application-assembly assist, Best Interests Duty rationale, and trail-book/repricing review. The broker owns the recommendation and BID file.",
+  "author": {
+    "name": "Jonathan Daddia",
+    "url": "https://github.com/daddia"
+  },
+  "keywords": ["mortgage-broker", "acl", "nccp", "best-interests-duty", "australia"]
+}

@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "machine": "chat",
+      "placeholder": "chat",
+      "label": "Chat"
+    },
+    {
+      "machine": "email",
+      "placeholder": "email",
+      "label": "Email"
+    },
+    {
+      "machine": "calendar",
+      "placeholder": "calendar",
+      "label": "Calendar"
+    },
+    {
+      "machine": "knowledge-base",
+      "placeholder": "knowledge base",
+      "label": "Knowledge base"
+    },
+    {
+      "machine": "documents",
+      "placeholder": "documents",
+      "label": "Documents"
+    },
+    {
+      "machine": "spreadsheet",
+      "placeholder": "spreadsheet",
+      "label": "Spreadsheet"
+    },
+    {
+      "machine": "crm",
+      "placeholder": "crm",
+      "label": "CRM / practice management"
+    },
+    {
+      "machine": "e-signature",
+      "placeholder": "e-signature",
+      "label": "E-signature"
+    },
+    {
+      "machine": "web-monitoring",
+      "placeholder": "web monitoring",
+      "label": "Web & news monitoring"
+    }
+  ],
+  "meta_placeholders": [
+    "category"
+  ],
+  "deprecated_placeholders": {}
+}

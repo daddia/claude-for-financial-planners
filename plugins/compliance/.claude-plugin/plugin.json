@@ -1,0 +1,10 @@
+{
+  "name": "compliance",
+  "version": "0.1.0",
+  "description": "Licensee compliance support for Australian advice and credit practices — file-review checklists, complaint intake, reportable-situation triage, REP 798 AI-use governance setup, and 7-year audit-export drafts. Assists the reviewer; does not certify.",
+  "author": {
+    "name": "Jonathan Daddia",
+    "url": "https://github.com/daddia"
+  },
+  "keywords": ["compliance", "afsl", "acl", "asic", "rep-798", "australia"]
+}

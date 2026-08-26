@@ -1,0 +1,10 @@
+{
+  "name": "financial-adviser",
+  "version": "0.1.0",
+  "description": "AFSL-scoped drafting support for Australian financial advisers — fact-find structure, SOA/ROA/Client Advice Record drafts, annual review packs, APL research, and DDO/TMD checks. The adviser sets the strategy, owns the recommendation, and remains the authorising signatory.",
+  "author": {
+    "name": "Jonathan Daddia",
+    "url": "https://github.com/daddia"
+  },
+  "keywords": ["financial-adviser", "afsl", "soa", "roa", "best-interests-duty", "australia"]
+}

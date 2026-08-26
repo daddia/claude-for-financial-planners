@@ -1,15 +1,3 @@
-# Local working files (review state, pointers, notes)
-*.local.json
-*.local.md
-TASKS.local.md
-
-# Claude local files
-.claude/*.local.json
-.claude/*.local.md
-.claude/worktrees/
-TASKS.md
-MEMORY.md
-
 # Operating System
 .DS_Store
 Thumbs.db
@@ -26,6 +14,7 @@ node_modules/
 vendor/
 venv/
 env/
+.venv/
 __pycache__/
 *.pyc
 
@@ -59,3 +48,11 @@ tmp/
 # Package files
 *.egg-info/
 .eggs/
+
+# Personal files
+TASKS.md
+MEMORY.md
+.claude/worktrees/
+.claude/work/
+*.local.md
+*.local.json

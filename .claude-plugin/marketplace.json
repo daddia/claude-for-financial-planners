@@ -1,0 +1,58 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-for-financial-planners",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Jonathan Daddia",
+    "url": "https://github.com/daddia"
+  },
+  "metadata": {
+    "description": "Draft-for-licensed-human-review plugins for Australian financial advisers and mortgage brokers — meeting prep, file notes, SOA/ROA/CAR and credit BID drafting support, compliance file review, and AI-use governance. Not personal advice and not credit assistance."
+  },
+  "plugins": [
+    {
+      "name": "advice-core",
+      "displayName": "Advice Core",
+      "source": "./plugins/advice-core",
+      "category": "productivity",
+      "description": "Shared practice setup, meeting prep, file notes, CRM hygiene, client communications, and marketing-content compliance review for Australian advice and broking practices — plus the connector set and the licensed-human-review guardrail spine.",
+      "author": {
+        "name": "Jonathan Daddia",
+        "url": "https://github.com/daddia"
+      }
+    },
+    {
+      "name": "financial-adviser",
+      "displayName": "Financial Adviser",
+      "source": "./plugins/financial-adviser",
+      "category": "productivity",
+      "description": "AFSL-scoped drafting support for Australian financial advisers — fact-find structure, SOA/ROA/Client Advice Record drafts, annual review packs, APL research, and DDO/TMD checks. The adviser sets the strategy, owns the recommendation, and remains the authorising signatory.",
+      "author": {
+        "name": "Jonathan Daddia",
+        "url": "https://github.com/daddia"
+      }
+    },
+    {
+      "name": "mortgage-broker",
+      "displayName": "Mortgage Broker",
+      "source": "./plugins/mortgage-broker",
+      "category": "productivity",
+      "description": "ACL-scoped drafting support for Australian mortgage brokers — needs analysis, lender-policy research, serviceability comparison, application-assembly assist, Best Interests Duty rationale, and trail-book/repricing review. The broker owns the recommendation and BID file.",
+      "author": {
+        "name": "Jonathan Daddia",
+        "url": "https://github.com/daddia"
+      }
+    },
+    {
+      "name": "compliance",
+      "displayName": "Compliance",
+      "source": "./plugins/compliance",
+      "category": "productivity",
+      "description": "Licensee compliance support for Australian advice and credit practices — file-review checklists, complaint intake, reportable-situation triage, REP 798 AI-use governance setup, and 7-year audit-export drafts. Assists the reviewer; does not certify.",
+      "author": {
+        "name": "Jonathan Daddia",
+        "url": "https://github.com/daddia"
+      }
+    }
+  ]
+}

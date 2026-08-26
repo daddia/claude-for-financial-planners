@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, and post summaries — the delivery surface for watchers and team notifications."
+    },
+    "gmail": {
+      "type": "http",
+      "url": "https://gmailmcp.googleapis.com/mcp/v1",
+      "title": "Gmail",
+      "description": "Search and read email threads for meeting prep, doc requests, and client follow-ups."
+    },
+    "google-drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch templates, fact-finds, file notes, and working drafts from Google Drive."
+    },
+    "google-calendar": {
+      "type": "http",
+      "url": "https://calendarmcp.googleapis.com/mcp/v1",
+      "title": "Google Calendar",
+      "description": "Read upcoming client meetings, review dates, and FDS/renewal deadlines from Google Calendar."
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp",
+      "title": "Notion",
+      "description": "Search and read Notion pages — clause libraries and knowledge base scoped to the user's OAuth permissions."
+    },
+    "microsoft-graph-enterprise": {
+      "type": "http",
+      "url": "https://mcp.svc.cloud.microsoft/enterprise",
+      "title": "Microsoft Graph (Enterprise)",
+      "description": "Read Microsoft Entra directory and enterprise Graph context (preview). For Outlook, SharePoint, Excel, and Teams, enable Agent365 MCP in your tenant — see CONNECTORS.md."
+    }
+  },
+  "recommendedCategories": [
+    "chat",
+    "email",
+    "documents",
+    "calendar",
+    "knowledge-base",
+    "crm"
+  ]
+}
