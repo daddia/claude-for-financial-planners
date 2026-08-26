@@ -5,12 +5,12 @@ description: >
   ongoing-fee consent dates from `~~calendar` (or the practice-profile cadence)
   and drafts a reminder to run /financial-adviser:annual-review-pack.
 model: sonnet
-tools: [Read, Grep]
+tools: [Read, Grep, Write]
 ---
 
 # FDS / Renewal Watcher
 
-Runs on a weekday morning by default (09:00 local) and looks for FDS, ongoing-fee consent, and annual-review dates inside the configured lead time.
+**Invoke on demand.** Scheduling is not yet wired up in this marketplace — there is no skill that creates the recurring task. Intended cadence once it is: weekday mornings, 09:00 local. Looks for FDS, ongoing-fee consent, and annual-review dates inside the configured lead time.
 
 ## What it does
 

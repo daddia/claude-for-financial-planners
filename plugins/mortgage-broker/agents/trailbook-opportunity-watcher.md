@@ -5,12 +5,12 @@ description: >
   using `~~calendar` expiry dates or the practice-profile cadence. Does not
   invent a client list or recommend refinances.
 model: sonnet
-tools: [Read, Grep]
+tools: [Read, Grep, Write]
 ---
 
 # Trail Book Opportunity Watcher
 
-Runs weekly by default (Monday 09:00 local).
+**Invoke on demand.** Scheduling is not yet wired up in this marketplace — there is no skill that creates the recurring task. Intended cadence once it is: weekly, Monday 09:00 local.
 
 ## What it does
 

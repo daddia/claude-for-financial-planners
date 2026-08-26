@@ -2,7 +2,7 @@
   "name": "plugin-management",
   "displayName": "Plugin Management",
   "description": "Maintainer toolkit for the Claude for Australian Financial Planners marketplace — create, customize, validate, register, and release practice plugins. Not for advisers or brokers. Not listed in the marketplace catalogue; load from the plugin directory.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "keywords": ["plugin-management", "meta-plugin", "scaffold", "maintainer"],
   "author": {

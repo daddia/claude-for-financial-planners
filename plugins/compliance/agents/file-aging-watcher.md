@@ -6,12 +6,12 @@ description: >
   the user or `~~calendar` provides. Does not certify files. Not a file
   review.
 model: sonnet
-tools: [Read, Grep]
+tools: [Read, Grep, Write]
 ---
 
 # Compliance File-Aging Watcher
 
-Runs weekly by default (Monday 09:00 local).
+**Invoke on demand.** Scheduling is not yet wired up in this marketplace — there is no skill that creates the recurring task. Intended cadence once it is: weekly, Monday 09:00 local.
 
 ## What it does
 

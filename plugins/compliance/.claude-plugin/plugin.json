@@ -1,7 +1,9 @@
 {
   "name": "compliance",
-  "version": "0.1.0",
+  "displayName": "Compliance",
+  "version": "0.1.1",
   "description": "Licensee compliance support for Australian advice and credit practices — file-review checklists, complaint intake, reportable-situation triage, REP 798 AI-use governance setup, and 7-year audit-export drafts. Assists the reviewer; does not certify.",
+  "license": "Apache-2.0",
   "author": {
     "name": "Jonathan Daddia",
     "url": "https://github.com/daddia"

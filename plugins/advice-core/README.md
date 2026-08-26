@@ -13,7 +13,7 @@ Shared practice setup, meeting prep, file notes, CRM hygiene, client communicati
 | **Client Letter** | Appointment / doc-request / process emails | `/advice-core:client-letter` |
 | **Marketing Review** | Copy vs misleading-conduct / TMD / licensee policy | `/advice-core:marketing-review` |
 
-This plugin has no scheduled agents under `agents/`.
+This plugin has no watcher agents under `agents/`.
 
 ## What this plugin does NOT do
 

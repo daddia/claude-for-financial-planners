@@ -13,7 +13,7 @@ plugins/<name>/                   # catalogue plugins (advice-core, financial-ad
   README.md
   skills/<name>/SKILL.md
   references/
-  agents/<name>.md                # scheduled watchers only
+  agents/<name>.md                # watcher agents only (on-demand in V1)
   hooks/hooks.json                # empty stub
 plugins/plugin-management/        # maintainer toolkit — NOT in marketplace.json
 plugins/references/               # shared mirror of advice-core setup refs + connector-taxonomy.json
@@ -47,6 +47,12 @@ python3 scripts/validate-skills.py --check
 
 # 6. connector placeholder taxonomy
 python3 scripts/validate-connectors.py --check
+
+# 7. skill permission tiers match the declared tier table
+python3 scripts/sync-skill-permission-tiers.py --check
+
+# 8. in-repo relative links resolve (skill-frame convention, see below)
+python3 scripts/validate-links.py
 ```
 
 ### Marketplace invariants (I1–I11)
@@ -73,7 +79,9 @@ For first-party plugins, `marketplace.json`'s `name`, `description`, and `author
 
 ### Plugin agents vs job-style names
 
-`agents/<name>.md` files are scheduled/background watcher definitions only. Job-style on-demand agents are README labels that map to slash commands under `skills/` — do not add duplicate files under `agents/`.
+`agents/<name>.md` files are watcher definitions only. Job-style on-demand agents are README labels that map to slash commands under `skills/` — do not add duplicate files under `agents/`.
+
+**Watchers are on-demand in V1.** Each watcher body states an intended cadence, but nothing in this marketplace creates the recurring task — there is no `schedule-setup` skill yet. Do not describe them as "scheduled" in user-facing docs until one ships. A watcher's `tools:` must cover every action its body describes, including the no-connector fallback (`Write` for the workspace-file path) and any web search.
 
 ### Skill names in prose must be canonical
 
@@ -103,6 +111,8 @@ Canonical trust rules: `plugins/advice-core/references/trust-conventions.md`. Af
 
 Shared setup refs live in `plugins/advice-core/references/` so they ship with the core plugin. Other plugins carry copies. `plugins/references/` is the contributor/validator mirror (plus `connector-taxonomy.json` and `skill-design-framework.md`) — it is **not** an installable plugin. Skills cite refs plugin-relative (`../../references/<file>.md` from `skills/<name>/`).
 
+**The skill frame is the only frame.** A `../../<path>` token means `plugins/<plugin>/<path>` **wherever it appears** — in a `SKILL.md`, in the plugin's `CLAUDE.md`, or inside a `references/*.md` file. Those latter two are instructions consumed by a skill, so they are written from the skill's location, not their own. Do not "fix" them to `./references/` or `../CLAUDE.md`; that breaks them at runtime. `scripts/validate-links.py` enforces this frame.
+
 ### Formatting
 
 - 2-space indent in JSON and `.mcp.json`
@@ -121,4 +131,5 @@ Use the `release` skill (`plugins/plugin-management/skills/release/SKILL.md`) ra
 
 - `hooks/hooks.json` stubs are empty on purpose
 - Do not add a first-party XPLAN/ApplyOnline MCP URL unless a vendor has shipped one
+- The four catalogue `.mcp.json` files are intentionally identical. Every plugin's skills reference `~~chat`, `~~calendar`, `~~documents`, `~~crm` and `~~e-signature`, and `practice-setup-framework.md` maps `notion` → clause library for all four — so the shared set is justified by actual usage, not copy-paste. Re-derive from `~~` placeholder usage before trimming.
 - Do not register `plugin-management` in the adviser/broker catalogue

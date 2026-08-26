@@ -1,7 +1,9 @@
 {
   "name": "advice-core",
-  "version": "0.1.0",
+  "displayName": "Advice Core",
+  "version": "0.1.1",
   "description": "Shared practice setup, meeting prep, file notes, CRM hygiene, client communications, and marketing-content compliance review for Australian advice and broking practices — plus the connector set and the licensed-human-review guardrail spine.",
+  "license": "Apache-2.0",
   "author": {
     "name": "Jonathan Daddia",
     "url": "https://github.com/daddia"

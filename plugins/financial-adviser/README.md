@@ -13,7 +13,7 @@ AFSL-scoped drafting support for Australian financial advisers — fact-find str
 | **Review Pack** | Annual review / FDS / consent pack scaffold | `/financial-adviser:annual-review-pack` |
 | **APL Research** | General product note against the APL | `/financial-adviser:apl-research` |
 | **TMD Check** | Copy/product section vs supplied TMD | `/financial-adviser:ddo-tmd-check` |
-| **FDS / Renewal Watcher** | Deadline reminder | scheduled agent |
+| **FDS / Renewal Watcher** | Deadline reminder | watcher agent (on demand) |
 
 ## What this plugin does NOT do
 
@@ -37,7 +37,7 @@ Install [`advice-core`](../advice-core) first (shared org profile and trust spin
 | `/financial-adviser:annual-review-pack` | annual-review-pack | Review / FDS pack |
 | `/financial-adviser:apl-research` | apl-research | General APL research note |
 | `/financial-adviser:ddo-tmd-check` | ddo-tmd-check | TMD consistency check |
-| scheduled | fds-renewal-watcher | Review/FDS reminders |
+| watcher (on demand) | fds-renewal-watcher | Review/FDS reminders |
 
 ## References
 

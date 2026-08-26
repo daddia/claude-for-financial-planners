@@ -6,7 +6,7 @@ Plugin files use `~~category` as a placeholder for whatever tool you connect in 
 
 Plugins are tool-agnostic — they describe workflows in terms of categories rather than specific products. Each plugin's `.mcp.json` pre-configures the productivity servers listed below as "Included servers"; any MCP server in that category works just as well.
 
-**V1 skills work without connectors** — paste a transcript, a fact-find, or a file note and get a draft. Connectors enrich meeting prep, CRM hygiene, and scheduled watchers when they exist.
+**V1 skills work without connectors** — paste a transcript, a fact-find, or a file note and get a draft. Connectors enrich meeting prep, CRM hygiene, and the watcher agents when they exist.
 
 ## Connectors for this marketplace
 
@@ -35,4 +35,4 @@ When a vendor ships or blesses an MCP server, add it to the relevant plugin's `.
 
 - **Microsoft Graph (Enterprise)** is listed in `.mcp.json` for Outlook/SharePoint/Teams tenants that enable Agent365 MCP — see each plugin's `CONNECTORS.md`.
 - **Privacy default:** do not send client PII to an unapproved endpoint. Prefer Australian hosting / APP-compliant contractual commitments recorded in the org profile.
-- **Watchers** (`compliance` file-aging and regulatory-change; `financial-adviser` FDS-renewal; `mortgage-broker` trail-book opportunity) degrade to a workspace file when `~~chat` is not connected.
+- **Watchers** (`compliance` file-aging and regulatory-change; `financial-adviser` FDS-renewal; `mortgage-broker` trail-book opportunity) degrade to a workspace file when `~~chat` is not connected. They are **invoked on demand in V1** — nothing here creates a recurring task yet.

@@ -12,8 +12,8 @@ Licensee compliance support for Australian advice and credit practices — file-
 | **Breach Triage** | Options for the human on a possible incident | `/compliance:breach-triage` |
 | **AI Governance** | REP 798 inventory + policy skeleton | `/compliance:ai-governance-setup` |
 | **Audit Export** | Reconstructable pack of inputs/drafts | `/compliance:audit-export` |
-| **File-Aging Watcher** | Files past review threshold | scheduled agent |
-| **Regulatory Change Watcher** | ASIC/Treasury/APRA bulletin draft | scheduled agent |
+| **File-Aging Watcher** | Files past review threshold | watcher agent (on demand) |
+| **Regulatory Change Watcher** | ASIC/Treasury/APRA bulletin draft | watcher agent (on demand) |
 
 ## What this plugin does NOT do
 
@@ -36,8 +36,8 @@ Install [`advice-core`](../advice-core) first (org profile), then `/compliance:p
 | `/compliance:breach-triage` | breach-triage | Options, not a legal finding |
 | `/compliance:ai-governance-setup` | ai-governance-setup | REP 798 inventory |
 | `/compliance:audit-export` | audit-export | Reconstructable pack |
-| scheduled | file-aging-watcher | Aging reminders |
-| scheduled | regulatory-change-watcher | Regulatory bulletin |
+| watcher (on demand) | file-aging-watcher | Aging reminders |
+| watcher (on demand) | regulatory-change-watcher | Regulatory bulletin |
 
 ## References
 

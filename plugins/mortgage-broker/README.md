@@ -13,7 +13,7 @@ ACL-scoped drafting support for Australian mortgage brokers — needs analysis, 
 | **Application Assemble** | Doc checklist for lodgement (does not lodge) | `/mortgage-broker:application-assemble` |
 | **BID File Note** | Broker-authored choice → rationale scaffold | `/mortgage-broker:bid-rationale` |
 | **Trail Book Review** | Expiry extract → conversation watchlist | `/mortgage-broker:trailbook-review` |
-| **Trail Book Watcher** | Cadence reminder | scheduled agent |
+| **Trail Book Watcher** | Cadence reminder | watcher agent (on demand) |
 
 ## What this plugin does NOT do
 
@@ -38,7 +38,7 @@ Install [`advice-core`](../advice-core) first, then `/mortgage-broker:practice-s
 | `/mortgage-broker:application-assemble` | application-assemble | Lodgement checklist |
 | `/mortgage-broker:bid-rationale` | bid-rationale | BID file-note scaffold |
 | `/mortgage-broker:trailbook-review` | trailbook-review | Internal expiry watchlist |
-| scheduled | trailbook-opportunity-watcher | Weekly reminder |
+| watcher (on demand) | trailbook-opportunity-watcher | Weekly reminder |
 
 ## References
 

@@ -1,7 +1,9 @@
 {
   "name": "mortgage-broker",
-  "version": "0.1.0",
+  "displayName": "Mortgage Broker",
+  "version": "0.1.1",
   "description": "ACL-scoped drafting support for Australian mortgage brokers — needs analysis, lender-policy research, serviceability comparison, application-assembly assist, Best Interests Duty rationale, and trail-book/repricing review. The broker owns the recommendation and BID file.",
+  "license": "Apache-2.0",
   "author": {
     "name": "Jonathan Daddia",
     "url": "https://github.com/daddia"

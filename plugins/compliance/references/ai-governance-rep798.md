@@ -38,6 +38,26 @@ This module turns ASIC's **11 governance questions** into setup steps for `/comp
 - Periodic drift / unexpected-output review
 - Same governance for third-party models as for internal ones
 
+## Since REP 798 — supervisory expectations have moved
+
+**Verify all of this against the primary sources before relying on it.** REP 798 remains the anchor document and its 11 questions are still the right skeleton, but its underlying data is a snapshot of AI use cases **as at December 2023**. Two later regulator communications sharpen what an inventory should capture:
+
+| Source | Date | What it adds to the inventory |
+|---|---|---|
+| APRA, letter to industry on artificial intelligence `[verify]` | 30 April 2026 | Findings from late-2025 engagement with larger institutions: AI governance maturity gaps, and **overreliance on vendor presentations and summaries without sufficient examination of key AI risks**. Board **AI literacy** and oversight of an AI strategy aligned to risk appetite are expressed as expectations. |
+| ASIC, letter to industry (26-092MR) `[verify]` | 8 May 2026 | Cyber resilience against frontier AI models — "do not wait for perfect clarity to address the threat posed by new AI models." A back-to-basics posture on core cyber risk management rather than AI-specific controls. |
+
+### What this changes in `/compliance:ai-governance-setup`
+
+- **Question 10 (third parties) carries more weight than the others.** This marketplace *is* a third-party AI tool in the licensee's inventory. Record it as one, and record what the practice has actually examined about it — not what the vendor's README claims. A README is a vendor summary; APRA's finding is precisely about relying on those.
+- **Question 3 (ethics) and question 4 (accountability) should capture board or principal AI literacy**, not just a named human per decision.
+- **Question 11 (engagement with reform)** should name both regulators, not ASIC alone — APRA-regulated entities in the group pick up the APRA letter as well.
+- Neither letter is a rule. Both are supervisory signals about what "adequate arrangements" is being read to mean. Do not present either as a compliance requirement in a draft — `[verify]` and route to the compliance owner.
+
+### Seed sources for `regulatory-change-watcher`
+
+When the watcher runs, these are the standing sources for the AI-governance thread: ASIC media releases and letters to industry, APRA letters to industry, Treasury DBFO consultations, and OAIC guidance on AI and the APP 1.7 automated-decision-making obligation commencing **10 December 2026**.
+
 ## Boundary this marketplace must keep
 
 By remaining in "assist a licensed human" territory and never generating client-facing personal advice autonomously, the product stays clear of being a **digital advice provider** under RG 255. The inventory must record that boundary explicitly.

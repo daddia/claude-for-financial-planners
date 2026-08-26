@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Verify marketplace.json plugin entries match each plugin's plugin.json.
 
-For first-party plugins (local ``./<dir>`` sources), ``name``, ``description``,
-and ``author`` in ``.claude-plugin/marketplace.json`` must match the
-corresponding fields in ``<dir>/.claude-plugin/plugin.json``.
+For first-party plugins (local ``./<dir>`` sources), ``name``, ``displayName``,
+``description``, and ``author`` in ``.claude-plugin/marketplace.json`` must match
+the corresponding fields in ``<dir>/.claude-plugin/plugin.json``.
 
 Exits 0 when in sync, 1 when any field diverges.
 """
@@ -17,7 +17,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MARKETPLACE_PATH = REPO_ROOT / ".claude-plugin" / "marketplace.json"
 
-SYNC_FIELDS = ("name", "description", "author")
+SYNC_FIELDS = ("name", "displayName", "description", "author")
 
 
 def _display_path(path: Path) -> str:

@@ -6,12 +6,12 @@ description: >
   and drafts a short brief for the compliance owner. Does not give legal
   advice. Verify against primary sources.
 model: sonnet
-tools: [Read, Grep]
+tools: [Read, Grep, Write, WebSearch]
 ---
 
 # Regulatory Change Watcher
 
-Runs weekly by default (Monday 08:30 local).
+**Invoke on demand.** Scheduling is not yet wired up in this marketplace — there is no skill that creates the recurring task. Intended cadence once it is: weekly, Monday 08:30 local.
 
 ## What it does
 

@@ -66,7 +66,10 @@ Each example produces a **draft artefact for your review**.
 
 ## Named agents
 
-Job-style names map to slash commands. Scheduled watchers live under `agents/` only.
+Job-style names map to slash commands. Watcher agents live under `agents/` only.
+
+> [!NOTE]
+> **Watchers are on-demand in V1.** Each watcher states an intended cadence, but nothing in this marketplace creates the recurring task yet — invoke them yourself. A `schedule-setup` skill is planned.
 
 | Agent | What it does | Command |
 |---|---|---|
@@ -76,10 +79,10 @@ Job-style names map to slash commands. Scheduled watchers live under `agents/` o
 | **SOA Scaffolder** | Fact-find + adviser-authored strategy → SOA/CAR draft | `/financial-adviser:soa-draft` |
 | **BID File Note** | Comparison + broker-authored choice → BID rationale scaffold | `/mortgage-broker:bid-rationale` |
 | **File Reviewer** | Draft file → gap list against licensee checklist | `/compliance:file-review` |
-| **FDS / Renewal Watcher** | Deadline reminder for reviews and FDS | scheduled (`financial-adviser`) |
-| **Trail Book Watcher** | Cadence reminder to scan expiries | scheduled (`mortgage-broker`) |
-| **File-Aging Watcher** | Files past review threshold | scheduled (`compliance`) |
-| **Regulatory Change Watcher** | ASIC/Treasury/APRA bulletin draft | scheduled (`compliance`) |
+| **FDS / Renewal Watcher** | Deadline reminder for reviews and FDS | watcher agent (`financial-adviser`) |
+| **Trail Book Watcher** | Cadence reminder to scan expiries | watcher agent (`mortgage-broker`) |
+| **File-Aging Watcher** | Files past review threshold | watcher agent (`compliance`) |
+| **Regulatory Change Watcher** | ASIC/Treasury/APRA bulletin draft | watcher agent (`compliance`) |
 
 Full command tables live in each plugin README.
 
